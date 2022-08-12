@@ -2281,11 +2281,11 @@ h1 {
 }
 
 .footer .copyright .col-md-6:last-child p {
-    user-select: none;
     text-align: right;
 }
 
 .footer .copyright p a {
+    user-select: none;
     color: #fdbe33;
     font-weight: 500;
     letter-spacing: 1px;
