@@ -2281,6 +2281,7 @@ h1 {
 }
 
 .footer .copyright .col-md-6:last-child p {
+    user-select: none;
     text-align: right;
 }
 
