@@ -3,7 +3,7 @@
 /*******************************/
 body {
     color: #666666;
-    background: #dddddd;
+    background: #4c4a4a;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
@@ -79,6 +79,7 @@ a:focus {
     position: relative;
     height: 90px;
     background: #fdbe33;
+    overflow: hidden;
 }
 
 .top-bar .logo {
@@ -158,7 +159,7 @@ h1 {
 @media (max-width: 991.98px) {
     .top-bar .logo {
         position: relative;
-        left: 10%;
+        left: 15%;
         text-align: center;
     }
 
@@ -169,15 +170,24 @@ h1 {
 
 
 @media (max-width: 425px) {
+    .top-bar {
+        height: 72px;
+    }
     .top-bar .logo {
-        position: relative;
-        left: -25%;
-        right: -25%;
+        position: absolute;
+        left: 0;
+        top: -10px;
         text-align: center;
+        width: 320px;
+    }
+
+    .top-bar img {
+        width: 60px;
     }
 
     h1 {
         font-size: 1.6rem;
+        white-space: wrap;
     }
 }
 
@@ -189,6 +199,7 @@ h1 {
     position: relative;
     background: #fdbe33;
     transition: .3s;
+    margin-bottom: 25px;
 }
 
 .nav-bar .container-fluid {
@@ -204,9 +215,10 @@ h1 {
     z-index: 999;
 }
 
-input[type="text"] {
+.navbar-brand {
     width: 60vw;
     font-size: .8rem;
+    color: black;
 }
 
 .nav-bar .navbar {
@@ -243,8 +255,8 @@ input[type="text"] {
 
 .nav-bar .btn:hover {
     color: #030f27;
-    background: #fdbe33;
-    border-color: #fdbe33;
+    background: #f64e4e;
+    border-color: #f64e4e;
 }
 
 @media (min-width: 992px) {
@@ -295,10 +307,11 @@ input[type="text"] {
 /*******************************/
 .carousel {
     position: relative;
-    width: 100%;
-    height: calc(100vh - 170px);
+    width: 99%;
+    height: calc(30vh - 170px);
     min-height: 400px;
     margin: 0 auto;
+    margin-bottom: 25px;
     text-align: center;
     overflow: hidden;
 }
@@ -361,15 +374,15 @@ input[type="text"] {
     text-transform: uppercase;
     color: #ffffff;
     background: transparent;
-    border: 2px solid #ffffff;
+    border: 2px solid #f64e4e;
     border-radius: 0;
     transition: .3s;
 }
 
 .carousel .carousel-caption .btn:hover {
     color: #030f27;
-    background: #fdbe33;
-    border-color: #fdbe33;
+    background: #f64e4e;
+    border-color: #f64e4e;
 }
 
 @media (max-width: 767.98px) {
@@ -538,12 +551,29 @@ input[type="text"] {
 }
 
 .feature .col-md-12 {
-    background: #030f27;
+    background: #fff;
 }
     
 .feature .col-md-12:nth-child(2n) {
     color: #030f27;
-    background: #fdbe33;
+    background: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#item-1 {
+    background-image: url("../img/truck.jpg");
+    background-size: cover;
+}
+
+#item-2 {
+    background-image: url("../img/work.jpg");
+    background-size: cover;
+}
+
+#item-3 {
+    background-image: url("../img/support.jpg");
+    background-size: cover;
 }
 
 .feature .feature-item {
@@ -766,6 +796,7 @@ input[type="text"] {
 .service .service-img {
     position: relative;
     overflow: hidden;
+    height: 55vh;
 }
 
 .service .service-img img {
